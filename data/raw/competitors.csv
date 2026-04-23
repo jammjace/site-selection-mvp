@@ -1,0 +1,7 @@
+clinic_name,brand,type,planning_area,latitude,longitude,premium_score
+Singapore National Eye Centre,Public Specialist,eye_centre,BUKIT MERAH,103.8379,1.2785,0.8
+Eagle Eye Centre,Private Premium,ophthalmology,ORCHARD,103.8368,1.3054,1.0
+Asia Pacific Eye Centre,Private Premium,ophthalmology,NOVENA,103.8405,1.3203,1.0
+Atlas Eye Specialist Centre,Private Premium,ophthalmology,NOVENA,103.8397,1.3212,1.0
+Shinagawa Eye Centre,Private Premium,refractive,ORCHARD,103.8338,1.3046,0.9
+Raffles Eye Centre,Private Hospital,refractive,KALLANG,103.8520,1.2924,0.9

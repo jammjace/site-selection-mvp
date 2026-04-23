@@ -57,13 +57,12 @@ def fetch_planning_areas_from_onemap(year: int = 2019) -> gpd.GeoDataFrame:
 
 
 def main() -> None:
-    # 1. Fetch planning areas from API and save raw copy
-    planning = fetch_planning_areas_from_onemap(year=2019).to_crs(epsg=4326)
-    planning.to_file(PLANNING_AREAS_PATH, driver="GeoJSON")
-    planning["planning_area"] = planning["planning_area"].apply(clean_area_name)
+    # 1. Fetch planning areas from downloaded data
+    planning = gpd.read_file("data/raw/planning_areas.geojson").to_crs(epsg=4326)
+    planning["planning_area"] = planning["PLN_AREA_N"].apply(clean_area_name)
 
     # 2. Load MRT exits
-    mrt = gpd.read_file(MRT_EXITS_PATH).to_crs(epsg=4326)
+    mrt = gpd.read_file("data/raw/mrt_exits.geojson").to_crs(epsg=4326)
 
     # 4. MRT exits -> count per planning area
     mrt_join = gpd.sjoin(
