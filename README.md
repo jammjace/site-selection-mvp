@@ -6,7 +6,7 @@ A Streamlit app that:
 ranks Singapore planning areas for a premium eye clinic using a brand-inspired scoring model with 4 preset modes:
 1. McDonald’s
 2. Starbucks
-3 .Luckin
+3. Luckin
 4. Q&M
 
 # Inputs:
